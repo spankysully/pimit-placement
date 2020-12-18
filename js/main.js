@@ -57,30 +57,27 @@ $(".island-code .close").click(function(){
 const settings = {
     
     
-//Player COUNTING/ VR
+//Player COUNTING
 settings1 : {
     one:{
         '*** This Sequencer will begin the counting process ***' :'',
         'Activate on Game Phase':'Game Start'        
     },
     two:{
-        '***  ***' :'',
         'When Triggered Transmit On':'CH 01' 
     },
     three:{
-        '***  ***' :'',
         'When Triggered Transmit On':'CH 06' 
     },
     four:{
-        '***  ***' :'',
         'When Triggered Transmit On':'CH 07' 
     }
 },
 
-//SETTINGS TOP 5
+//SETTINGS Mutators
  settings2 : {
     one:{
-        '***  ***' :'',
+        '*** This mutator must cover the area where players spawn ***' :'',
         'Allow Weapon Fire': 'YES',
         'Zone Width': '100',
         'Zone Depth': '100',
@@ -91,7 +88,7 @@ settings1 : {
         'On Player Entering Zone Transmit On': 'CH 02',
     },
      two:{
-        '***  ***' :'',
+        '*** This mutator must cover the entire playable area ***' :'',
         'Allow Weapon Fire': 'YES',
         'Zone Width': '100',
         'Zone Depth': '100',
@@ -102,7 +99,7 @@ settings1 : {
         'On Player Entering Zone Transmit On': 'CH 05',
     },
     three:{
-        '***  ***' :'',
+        '*** This mutator must cover the entire playable area, but not island start spawn pads. ***' :'',
         'Allow Weapon Fire': 'YES',
         'Zone Width': '100',
         'Zone Depth': '100',
@@ -206,7 +203,7 @@ settings1 : {
 },
 
 //SETTINGS TOP 1
- settings4 : {
+ settings6 : {
    
     one:{
         '*** Transmit on Score == Placement Being Awarded ***' :'',
