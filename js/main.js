@@ -128,7 +128,7 @@ settings1 : {
         'On Score Output Transmit To': 'CH 08'
     },
     three:{
-        '*** This trigger enables the Top 3 Tracker ***' :'',
+        '*** This trigger enables the Top 10 Points ***' :'',
         'Enabled on Game Start': 'DISABLED',
         'Enable When Receiving From': 'CH 06',
         'Trigger When Receiving From': 'CH 08',
@@ -158,7 +158,7 @@ settings1 : {
         'On Score Output Transmit To': 'CH 09'
     },
     two:{
-        '*** This trigger enables the Top 3 Tracker ***' :'',
+        '*** This trigger enables the Top 5 Points ***' :'',
         'Enabled on Game Start': 'DISABLED',
         'Enable When Receiving From': 'CH 06',
         'Trigger When Receiving From': 'CH 09',
@@ -188,14 +188,14 @@ settings1 : {
         'On Score Output Transmit To': 'CH 10'
     },
     two:{
-        '*** This trigger enables the Top 3 Tracker ***' :'',
+        '*** This trigger enables the Top 3 Points ***' :'',
         'Enabled on Game Start': 'DISABLED',
         'Enable When Receiving From': 'CH 06',
         'Trigger When Receiving From': 'CH 10',
         'When Triggered Transmit On': 'CH 04'
     },
     three:{
-        '*** The Score to award players when 5 left ***' :'',
+        '*** The Score to award players when 3 left ***' :'',
         'Score Value': '3',
         'Score Change When Activated': '1',
         'Transmit on Score': '10',
@@ -218,7 +218,7 @@ settings1 : {
         'On Score Output Transmit To': 'CH 11'
     },
     two:{
-        '*** This trigger enables the Top 3 Tracker ***' :'',
+        '*** This trigger enables the Top 1 Points ***' :'',
         'Enabled on Game Start': 'DISABLED',
         'Enable When Receiving From': 'CH 06',
         'Trigger When Receiving From': 'CH 11',
