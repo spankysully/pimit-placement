@@ -1,0 +1,437 @@
+@font-face {
+    font-family: 'alarm_clock';
+    src: url('fonts/alarm_clock-webfont.woff2') format('woff2'),
+         url('fonts/alarm_clock-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Burbank';
+    src: url('fonts/BurbankBigRegular-Black.woff2') format('woff2'),
+        url('fonts/BurbankBigRegular-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Burbank";
+    
+}
+
+a{
+    text-decoration: underline;
+    color: inherit;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+main{
+    height: 100vh;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+h1{
+    background-color: #58d647;
+    color: #FFF;
+    text-align:center;
+    font-size: 3rem;
+    padding: 1em 1em 0.25em 1em;
+}
+
+main > h3{
+    background-color: #58d647;
+    color: #FFF;
+    text-align: center;
+    padding: 0.5em;
+    
+}
+
+.popup{
+    position: fixed;
+    width: 100%;
+    height: 5em;
+    font-size: 3em;
+    background-color: white;
+    display: grid;
+    place-items: center;
+    z-index: 999;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    display: none;
+}
+
+.popup p{
+    font-size: 0.5em;
+    margin-top: -1em;
+}
+
+.popup span.code{
+    font-size: 0.5em;
+    margin-top: -1em;
+}
+.popup span.close{
+    font-size: 1em;
+    margin-top: -1em;
+    position: absolute;
+    top: 1.5em;
+    right: 0.5em;
+    cursor: pointer;
+}
+
+
+.island-code{
+    position: fixed;
+    bottom: 20px;
+    height: 3.8em;
+    width: 470px;
+    padding: 0.8em 1em 1em 1em;
+    font-size: 1.5em;
+    background-color: rgb(251, 235, 51) !important;
+    clip-path: polygon(91% 8%, 100% 0, 100% 100%, 88% 93%, 90% 100%, 0 100%, 6% 90%, 0 92%, 0 0, 94% 0);
+    z-index: 999;
+}
+
+.island-code .close{
+    cursor: pointer;
+    display: block;
+    float: right;
+    font-size: 2rem;
+    color: #106DDD;
+    transform: translate(10px, -5px);
+}
+
+.island-code img{
+    transform: translateY(5px);
+    margin-right: 4px;
+}
+
+section{
+    background-color: #58d647;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1rem 1fr 1fr;
+    gap: 0.5rem;
+}
+
+section:nth-of-type(odd){
+    background-color: #4bb83d;
+}
+
+
+section h2{
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+    color: #FFF;
+    letter-spacing: 0.15rem;   
+}
+
+
+.TRIGGER{
+    height: 120px;
+    width: 125px;
+    background-image: url(../trigger.png);
+    background-size: cover;
+    cursor: pointer;
+    color: rgb(138, 138, 229);
+    font-size: 1.2rem;
+    padding: 10px 0 0 40px ;
+    letter-spacing: -0.10rem;
+    font-family: 'alarm_clock';
+    z-index: 1;
+}
+
+.TRACKER{
+    height: 120px;
+    width: 125px;
+    background-image: url(../tracker.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.active{
+    filter: drop-shadow(2px 2px 5px rgba(31, 53, 255, 0.95)) drop-shadow(-2px -2px 5px rgba(31, 53, 255, 0.95));
+}
+
+.MUTATOR-ZONE{
+    height: 120px;
+    width: 120px;
+    background-image: url(../mutator.png);
+    background-size: cover;
+    cursor: pointer;
+    color: rgb(138, 138, 229);
+    font-size: 1.2rem;
+    padding: 10px 0 0 40px ;
+    letter-spacing: -0.10rem;
+    font-family: 'alarm_clock';
+}
+
+.SEQUENCER{
+    height: 120px;
+    width: 120px;
+    background-image: url(../sequencer.png);
+    background-size: cover;
+    cursor: pointer;
+    color: rgb(138, 138, 229);
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.SCORE-MANAGER{
+    height: 120px;
+    width: 120px;
+    background-image: url(../score.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+    color: rgb(138, 138, 229);
+    font-size: 1.2rem;
+    padding: 10px 0 0 40px ;
+    letter-spacing: -0.10rem;
+    font-family: 'alarm_clock';
+}
+
+.HUD-MESSAGE-DEVICE{
+    height: 120px;
+    width: 120px;
+    background-image: url(../hud.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+    color: rgb(138, 138, 229);
+    font-size: 1.2rem;
+    padding: 10px 0 0 40px ;
+    letter-spacing: -0.10rem;
+    font-family: 'alarm_clock';
+}
+
+.TEAM-SETTINGS{
+    height: 125px;
+    width: 125px;
+    background-image: url(../team.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+    color: rgb(138, 138, 229);
+    font-size: 1.2rem;
+    padding: 10px 0 0 40px ;
+    letter-spacing: -0.10rem;
+    font-family: 'alarm_clock';
+}
+
+
+aside{
+    position: sticky;
+    background:#09123C;
+    color: #97DCFE;
+    padding: 1rem;
+    transition: transform 0.25s ease-in-out;
+}
+
+aside header{
+    position: sticky;
+    top: 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    place-items: center left;
+    color: #FFF;
+    background: #106DDD;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+aside h3{
+    place-self: end;
+}
+
+aside ul{
+    /* position: sticky; */
+    /* top: 5.5rem; */
+    list-style: none;
+    display: grid;
+    grid-auto-rows: 3rem;
+    gap: 0.5rem;
+}
+
+aside .header{
+    background: #106DDD;
+    display: block;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    /* justify-items: center; */
+    color: #FFF;
+
+}
+
+aside li{
+    background-color: #2A2E55;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+
+aside li span{
+    color: #fff;
+    align-self: center;
+    margin-left: auto;
+}
+
+aside .close{
+    display: none;
+}
+
+
+.settings{
+    grid-template-columns: 1fr;
+    background:#09123C !important;
+    color: #97DCFE;
+    padding: 1rem;
+}
+
+.settings h2{
+    /* position: sticky; */
+    top: 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    place-items: center left;
+    color: #FFF;
+    background: #106DDD;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.settings h3{
+    background-color: #2A2E55;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 3rem;
+}
+
+@media only screen and (max-width: 1150px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    h1{
+        background-color: #58d647;
+        color: #FFF;
+        text-align:center;
+        font-size: 2rem;
+        padding: 1em;
+    }
+
+    main{
+        width: 100vw;
+    }
+    section{
+        width: 100%;
+        grid-template-columns: repeat(3, auto);
+        grid-auto-rows: auto;
+    }
+
+    section h2{
+        margin: 0;
+    }
+
+    section > div{
+        height: 80px !important;
+        width: 80px !important;
+        justify-self: center;
+    }
+
+    .TRIGGER{
+        font-size: 1rem;
+        padding: 8px 0 0 24px;
+    }
+
+    aside{
+        position: fixed;
+        left: 100%;
+        /* padding-left: 50px; */
+        width:100vw;
+        height: 100vh;
+        z-index: 9999;
+        overflow-y: scroll;
+        padding: 0;
+    }
+
+    aside .header{
+        background: #106DDD;
+        display: block;
+        display: grid;
+        grid-template-columns: 30px 2fr 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        color: #FFF;
+    }
+
+    aside .header span{
+        display: block;
+    }
+
+    aside .close{
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 1.8rem;
+        background-color: #FFF;
+        color: #106DDD;
+        line-height: 1.2;
+        cursor: pointer;
+       
+    }
+
+    aside #deviceType{
+        width: 100%;
+        text-align: center;
+    }
+
+    aside li{
+        padding-right: 0.5rem ;
+        padding-left: 0.5rem;
+    }
+
+    .island-code{
+        position: fixed;
+        bottom: 20px;
+        height: 4.5em;
+        width: 90%;
+        padding: 0.8em 1em 1em 1em;
+        font-size: 1em;
+        background-color: rgb(251, 235, 51) !important;
+        clip-path: polygon(91% 8%, 100% 0, 100% 100%, 88% 93%, 90% 100%, 0 100%, 6% 90%, 0 92%, 0 0, 94% 0);
+        z-index: 999;
+    }
+
+    .island-code .close{
+        font-size: 1.5em;
+        transform: translate(5px, 0px);
+    }
+    
+}
