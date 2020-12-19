@@ -121,7 +121,7 @@ settings1 : {
         'Transmit on Score': '10',
         'Reset When Receiving From': 'CH 01',
         'Increment When Receiving From': 'CH 02',
-        'Decrement When Receiving From': 'CH 02',
+        'Decrement When Receiving From': 'CH 03',
         'On Score Output Transmit To': 'CH 08'
     },
     three:{
@@ -151,7 +151,7 @@ settings1 : {
         'Transmit on Score': '5',
         'Reset When Receiving From': 'CH 01',
         'Increment When Receiving From': 'CH 02',
-        'Decrement When Receiving From': 'CH 02',
+        'Decrement When Receiving From': 'CH 03',
         'On Score Output Transmit To': 'CH 09'
     },
     two:{
@@ -181,7 +181,7 @@ settings1 : {
         'Transmit on Score': '3',
         'Reset When Receiving From': 'CH 01',
         'Increment When Receiving From': 'CH 02',
-        'Decrement When Receiving From': 'CH 02',
+        'Decrement When Receiving From': 'CH 03',
         'On Score Output Transmit To': 'CH 10'
     },
     two:{
@@ -211,7 +211,7 @@ settings1 : {
         'Transmit on Score': '1',
         'Reset When Receiving From': 'CH 01',
         'Increment When Receiving From': 'CH 02',
-        'Decrement When Receiving From': 'CH 02',
+        'Decrement When Receiving From': 'CH 03',
         'On Score Output Transmit To': 'CH 11'
     },
     two:{
