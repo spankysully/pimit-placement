@@ -105,7 +105,7 @@ settings1 : {
         'Zone Depth': '100',
         'Zone Height': '100',
         'Enabled At Game Start': 'YES',
-        'On Player Leavinf Zone Transmit On': 'CH 03',
+        'On Player Leaving Zone Transmit On': 'CH 03',
     }
 },
 
@@ -227,7 +227,7 @@ settings1 : {
         'Times Can Trigger':'1',
         'Transmit on Score': '10',
         'Activate When Receiving From': 'CH 05',
-        'Enabled When Receiving From': 'CH 1',
+        'Enabled When Receiving From': 'CH 11',
         'Disable When Receiving From': 'CH 07',
         'On Max Triggers Transmit To': 'CH 12'
     },
