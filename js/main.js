@@ -135,7 +135,6 @@ settings1 : {
         '*** The Score to award players when 10 left ***' :'',
         'Score Value': '5',
         'Score Change When Activated': '1',
-        'Transmit on Score': '10',
         'Activate When Receiving From': 'CH 05',
         'Enabled When Receiving From': 'CH 08',
         'Disable When Receiving From': 'CH 07'
@@ -165,7 +164,6 @@ settings1 : {
         '*** The Score to award players when 5 left ***' :'',
         'Score Value': '3',
         'Score Change When Activated': '1',
-        'Transmit on Score': '10',
         'Activate When Receiving From': 'CH 05',
         'Enabled When Receiving From': 'CH 09',
         'Disable When Receiving From': 'CH 07'
@@ -195,7 +193,6 @@ settings1 : {
         '*** The Score to award players when 3 left ***' :'',
         'Score Value': '3',
         'Score Change When Activated': '1',
-        'Transmit on Score': '10',
         'Activate When Receiving From': 'CH 05',
         'Enabled When Receiving From': 'CH 10',
         'Disable When Receiving From': 'CH 07'
@@ -225,7 +222,6 @@ settings1 : {
         '*** The Score to award players when 1 left ***' :'',
         'Score Value': '3',
         'Times Can Trigger':'1',
-        'Transmit on Score': '10',
         'Activate When Receiving From': 'CH 05',
         'Enabled When Receiving From': 'CH 11',
         'Disable When Receiving From': 'CH 07',
